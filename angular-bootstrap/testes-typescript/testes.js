@@ -58,4 +58,29 @@ var Celular;
     Celular["Xiaomi"] = "Mi Note 9";
 })(Celular || (Celular = {}));
 console.log(Celular.Iphone);
-console.log(Celular["Iphone 12 pro max"]);
+//Const com referência
+var refer = { nome: "Wellington", idade: 18 };
+console.log(refer);
+refer.nome = "Wellington Klinkowski";
+console.log(refer);
+//Const com referência alterando o objeto passado
+//Forma errada que retorna erro
+//const obj2 = {nome: "Wellington", idade: 18}
+//obj2 = {nome: "Erro", idade: 1}
+//                  Operações
+//Adição
+var y = 5;
+console.log(y + 1);
+//Subtração
+var z = 5;
+console.log(z - 1);
+//Multiplicação
+var w = 5;
+console.log(w * 2);
+//Divisão
+var k = 5;
+console.log(k / 2);
+//Divisão com retorno de inteiros
+var l = 5;
+var x = Math.trunc(l / 2);
+console.log(x);

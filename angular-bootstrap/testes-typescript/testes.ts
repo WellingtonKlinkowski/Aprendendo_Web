@@ -75,3 +75,41 @@ enum Celular {
 }
 
 console.log(Celular.Iphone);
+
+//Const com referência
+
+const refer = {nome: "Wellington", idade: 18}
+console.log(refer);
+refer.nome = "Wellington Klinkowski";
+console.log(refer);
+
+//Const com referência alterando o objeto passado
+//Forma errada que retorna erro
+
+//const obj2 = {nome: "Wellington", idade: 18}
+//obj2 = {nome: "Erro", idade: 1}
+
+
+
+//                  Operações
+
+//Adição
+let y = 5;
+console.log(y + 1);
+
+//Subtração
+let z = 5;
+console.log(z - 1);
+
+//Multiplicação
+let w = 5;
+console.log(w * 2);
+
+//Divisão
+let k = 5;
+console.log(k / 2);
+
+//Divisão com retorno de inteiros
+let l = 5;
+let x = Math.trunc(l/2);
+console.log(x);
