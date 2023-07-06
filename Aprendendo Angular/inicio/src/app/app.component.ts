@@ -2,15 +2,15 @@ import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>'
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    `
 })
 export class AppComponent implements OnInit{
   constructor() {}
 
   ngOnInit(): void {
-    setTimeout (()=>
-    {
-      window.alert('Hello World')
-    }, 3000 )
+
   }
 }

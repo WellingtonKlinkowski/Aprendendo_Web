@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
-  public title: string = "Projeto Angular";
+export class HeaderComponent implements OnInit, OnChanges{
+  @Input() public title: string = "Projeto Angular";
 
-  constructor(){
+  constructor(){}
 
-  }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-
+  ngOnChanges(): void {
+    console.log("Foi alterado a entrada passada como parâmetro")
   }
 }
